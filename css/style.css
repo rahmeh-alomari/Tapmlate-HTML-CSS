@@ -1,0 +1,198 @@
+/* 
+1- common
+2-general 
+3-sections
+  3.0  header
+  3.1 Home section
+  3.2 About
+  3.3 Portfoili
+  3.4 Service
+  3.5 Price
+  3.6 Team
+  3.7 Blog
+  3.8 contact section
+  3.9 footer
+ */
+
+/*  common */
+ /* 
+ -container
+ -overlay
+ 1-opacity hover
+ 2-section header
+ 3- section padding
+ 4- hover effect 1(left to right )
+ 5- hover effect 2(top to bottom)
+ 6- container 
+ 
+ */
+ /* gereral code */
+ *{
+     margin: 0;
+     padding: 0;
+     /* suppose width 100 and border 10  sumation = 100  padding , border*/
+     box-sizing: border-box; /* css3*/
+ }
+ :root{
+     --maincolor : #6195ff;
+     --grayColor:#999;
+     
+     --whitecolor:#fff;
+ }
+ .container{
+     width: 80%;
+    
+     margin:auto;
+ }
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+button{
+    font-family: inherit;
+}
+.clear{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: monotserrat;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.section-header{  
+    
+    text-align: center;
+  
+}
+.section-header .text-title{
+    font-size:35px ;
+    text-transform: capitalize;
+   
+}
+.section-header .line{
+    margin: 0 auto 70px auto;
+    display: block;
+    height: 5px;
+    width: 70px;
+    background-color: var(--maincolor);
+}
+.pad-y{
+    padding:100px 0  100px 0;
+}
+.ltr-effect,.tb-effect{
+    position: relative;
+}
+.ltr-effect:after,.tb-effect:after{
+position:absolute;
+content: "";
+width: 0;
+height: 100%;
+top:0;
+left:0;
+background-color: #333;
+transition: width .5s;
+
+}
+.ltr-effect:hover:after{
+    width: 100%;
+    z-index: -1;
+}
+
+.tb-effect:after{
+width: 100%;
+height: 0;
+z-index: -1;
+transition: height .5s;
+
+}
+.tb-effect:hover:after{
+    height: 100%;
+}
+
+/* header */
+.dropDown{
+    position: relative;
+}
+.dropDown-menu{
+    position:absolute;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    left:5px;
+    top:70%;
+    opacity: 0;
+    visibility:hidden;
+    background-color: teal;
+    list-style: none;
+    transition: opacity 0.5s , visibility 0.5s;
+} 
+.dropDown-menu .link-dropdown{
+    color: var(--whitecolor);
+    display: block;
+    padding: 5px;
+}
+.dropDown:hover .dropDown-menu{
+    opacity: 1;
+    visibility:visible; 
+}
+.layer-content .layer-info{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.layer-content a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    top:10px;
+    position: relative;
+    opacity: 0;
+
+    
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 0.2s;
+}
+
+.layer-content .catg{
+    color:var(--maincolor) ;
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    top:10px;
+    opacity: 0;
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 0.3s;
+    
+}
+.layer-content-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--whitecolor);
+    position: relative;
+    top:10px;
+    opacity: 0;
+    transition: top 0.5s , opacity 0.5s;
+    transition-delay: 0.3s;
+    
+}
+
+
+/* Home */
+/* About */
+/* Portfoilio */
+/* Service */
+/* Price */
+/*  Team */
+/*  Blog */
+/* Contact */

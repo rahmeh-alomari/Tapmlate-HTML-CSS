@@ -1,0 +1,51 @@
+
+.header{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header .logo{
+    width: 40%;
+    color: white;
+    padding: 20px;
+}
+
+.header .nav{
+    width: 60%;
+    list-style: none;
+    text-align: right;
+}
+
+.header .nav > li{
+    display: inline-block;
+    text-align: right;
+}
+
+.header .nav > li > a{
+    color: white;
+    padding: 30px 15px;
+    display: block;
+    width: 100px;
+   
+    font-size: 17px;
+    
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after{
+    content: "";
+    display: block;
+    margin-top: 2px;
+    height: 5px;
+    background-color: teal;
+    margin-left: 10px;
+    transition: width 0.5s;
+  }
+  .header .nav  > li a:after{
+
+    width: 0;
+  }
+.header .nav li > a:hover::after{
+    width: 100%;
+}

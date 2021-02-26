@@ -1,0 +1,42 @@
+
+.portfoili-content {
+    overflow: hidden;
+    }
+    .portfoili-item  {
+        width: 32%;
+        margin-bottom: 20px;
+        position: relative;
+        padding: 20px;
+    }
+    .portfoili-item .layer-content{
+        position:absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s;
+    }
+    .portfoili-item:hover  .layer-content{ 
+        visibility:visible;
+        opacity: 1;
+    }
+    .portfoili-item img{
+        width: 100%;
+       
+    }
+    .portfoili-item.mg{
+        margin: 0 2%;
+        
+    }
+    .portfoili-item:hover .layer-content-title,
+.portfoili-item:hover .layer-content a i,
+.portfoili-item:hover .layer-content .catg {
+
+    top:1px;
+    opacity: 1;
+}

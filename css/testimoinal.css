@@ -1,0 +1,39 @@
+
+.testimonal{
+    position: relative;
+    background-image: url(../image/background/background2.webp);
+    background-attachment: fixed;
+    height: 400px;
+}
+.testiminal-content{
+    overflow: hidden;
+    padding: 120px 0;
+    width: 60%;
+    margin: auto;
+}
+.testimonial-item{
+    width: 50%;
+    color: var(--whitecolor);
+}
+.testimonial-item .testiminal-toplayer{
+    padding: 2px 0 30px 100px;
+    position: relative;
+}
+.testimonial-item .testiminal-toplayer img{
+    position:absolute;
+    left: 10px;
+    top:-2px;
+    border-radius: 50%;
+}
+.testimonial-item .testiminal-toplayer h3{
+    margin: 5px 0;
+
+}
+.testimonial-item .testiminal-toplayer span{
+  color: var(--maincolor);
+}
+
+.testimonial-item .testimonial-item-des{
+    line-height: 1.5;
+    font-size: 17px;
+}

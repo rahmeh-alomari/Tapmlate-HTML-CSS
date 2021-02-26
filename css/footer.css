@@ -1,0 +1,30 @@
+.footer{
+    background-color: #1c1d23;
+    text-align: center;
+    padding: 60px 0;
+}
+.footer-linkes{
+      list-style: none;
+      margin: 20px 0;
+}
+.footer-linkes li{
+   display: inline-block;
+}
+.footer-linkes li a{
+   display: block;
+    width: 50px;
+    height: 50px;
+    background: var(--maincolor);
+    color: var(--whitecolor);
+    margin: 0 5px ;
+    border-radius: 50%;
+}
+.footer-linkes li a i{
+    line-height: 50px;
+}
+.copyright{
+    color: var(--grayColor);
+    font-size:15px ;
+    text-transform: uppercase;
+}
+//breadkrumbs
